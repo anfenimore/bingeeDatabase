@@ -22,7 +22,7 @@ namespace database
             while (rdr.Read())
             {
                 //creates the list from the database
-                myShows.Add(new MyList() { userId = rdr.GetInt32(4), showId = rdr.GetInt32(5) });
+                myShows.Add(new MyList() { userId = rdr.GetInt32(4), showId = rdr.GetInt32(5), name = rdr.GetString(6), image_thumbnail_page = rdr.GetString(7), network = rdr.GetString(8) });
             }
             return myShows;
         }
