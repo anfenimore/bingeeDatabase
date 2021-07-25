@@ -23,7 +23,7 @@ namespace database
         // }
         public void CreateShow(Show myShow)
         {
-            myShow.userId = 1;
+            // myShow.userId = 1;
             ConnectionString myConnection = new ConnectionString();
             string cs = myConnection.cs;
 

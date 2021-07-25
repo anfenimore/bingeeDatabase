@@ -17,16 +17,6 @@ namespace watchlist
         {
             // CreateHostBuilder(args).Build().Run();
 
-            // Show testShow = new Show();
-            // testShow.userId = 1;
-            // testShow.showId = 15189;
-            // testShow.name = "GossippGirl";
-            // testShow.image_thumbnail_path = "https://static.episodate.com/images/tv-show/thumbnail/15189.jpg";
-            // testShow.network = "The CW";
-
-            // SaveShow insertObject = new SaveShow();
-            // insertObject.CreateShow(testShow);
-
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
