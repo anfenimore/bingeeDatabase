@@ -12,7 +12,6 @@ namespace watchlist.database
             string cs = mycs.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
-            //Gets all items from the cart as well as the things that go with the item
             string stm = "SELECT * FROM qzmcs9waprksg9rs.users u INNER JOIN qzmcs9waprksg9rs.watched w ON u.userId = w.userId;";
             using var cmd = new MySqlCommand(stm, con);
             using MySqlDataReader rdr = cmd.ExecuteReader();
