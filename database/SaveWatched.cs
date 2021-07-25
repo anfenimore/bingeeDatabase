@@ -13,7 +13,7 @@ namespace watchlist.database
             using var con = new MySqlConnection(cs);
             con.Open();
 
-            string stm = "INSERT INTO qzmcs9waprksg9rs.watch (userId, showId, name, image_thumbnail_path, network) VALUES(@userId, @showId, @name, @image_thumbnail_path, @network)";
+            string stm = "INSERT INTO qzmcs9waprksg9rs.watched (userId, showId, name, image_thumbnail_path, network) VALUES(@userId, @showId, @name, @image_thumbnail_path, @network)";
             using var cmd = new MySqlCommand(stm, con);
             // cmd.Parameters.AddWithValue("@userId", myShow.userId);
             cmd.Parameters.AddWithValue("@userId", 1);
