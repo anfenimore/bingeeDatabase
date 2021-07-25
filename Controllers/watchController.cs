@@ -52,8 +52,8 @@ namespace watchlist.Controllers
         public void Put([FromBody] Show myShow)
         {
             //Adds item to the cart
-            SaveShow insertObject = new SaveShow();
-            insertObject.CreateShow(myShow);
+            SaveWatched insertObject = new SaveWatched();
+            insertObject.SaveWatchedShow(myShow);
         }
 
         // DELETE: api/cart
