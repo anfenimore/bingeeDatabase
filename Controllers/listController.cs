@@ -58,8 +58,9 @@ namespace watchlist.Controllers
         // DELETE: api/cart
         // [EnableCors("AnotherPolicy")]
         [HttpDelete]
-        public void Delete([FromBody] int showId)
+        public void Delete([FromBody] Show myShow)
         {
+            int showId = myShow.showId;
             //Removes item from cart
             System.Console.WriteLine("Made it to delete " + showId);
             IDeleteShow insertObject = new DeleteShow();
