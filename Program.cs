@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using watchlist.database;
+using watchlist.interfaces;
 using watchlist.models;
 
 namespace watchlist
